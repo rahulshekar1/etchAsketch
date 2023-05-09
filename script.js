@@ -3,9 +3,19 @@ for(let i=0; i<(16*16); i++){
     boxes.classList.add("tiles");
     document.getElementById('row1').appendChild(boxes);
 }
-document.querySelectorAll(".tiles").forEach(item=>{
+
+const selectTiles = document.querySelectorAll(".tiles");
+selectTiles.forEach(item=>{
     item.addEventListener('mouseover',() => {
         item.style.backgroundColor ="blue";
         })
     })
+const btn = document.querySelector("#btn");
+
+function clearGrid(){
+    selectTiles.forEach(item=>{item.style.backgroundColor="white"});
+    }
+btn.addEventListener('click',clearGrid);
+
+
 
