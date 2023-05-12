@@ -1,8 +1,15 @@
 h1{
     text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 350px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin-top: 0;
 }
 #bod{
-    height: 800px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,4 +29,33 @@ h1{
 .tiles{
     width: 31.25px;
     height: 31.25px;
+}
+
+#options{
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border:2px solid black;
+}
+input#Greyed,#Jathre{
+    height: 35px;
+    width: 35px;
+}
+input#Uinp{
+    height: 35px;
+    width: 180px;
+}
+button#reset{
+    height: 40px;
+    margin: 20px;
+    background-color: white;
+    padding: 10px;
+}
+button.submitButton{
+    height: 30px;
 }

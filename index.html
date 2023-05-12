@@ -8,16 +8,27 @@
     <link rel="stylesheet" href = "styles.css">
     <script  src="script.js" defer></script>
 </head>
-<body id="bod">
+<body id="bod" background="images/wooo.jpg">
     <h1>Etch A Sketch</h1>
     <div id="row1"></div>
     <br><br>
+    <div id="options">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;border-right: 3px solid black; padding: 5px;">
+            Change Size: <input type="text" id="Uinp" style="font-size: 25px;">
+            <button class="submitButton">SUBMIT</button>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px; border-left: 3px solid black; padding: 5px;">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                <input type="checkbox" id="Jathre" >
+                <label for="Jathre">Jathre</label>
+            </div> 
+            <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                <input type="checkbox" id="Greyed" >
+                <label for="Greyed">50 Shades of Grey</label>
+            </div> 
+            
+        </div>
+    </div>
     <button id="reset">RESET</button>
-    Enter rows: <input type="text" id="Uinp">
-    <button class="submitButton">SUBMIT</button>
-    <input type="checkbox" id="Jathre" >
-    <label for="Jathre">Jathre</label>
-    <input type="checkbox" id="Greyed" >
-    <label for="Greyed">50 Shades of Grey</label>
 </body>
 </html>
